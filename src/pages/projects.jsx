@@ -15,56 +15,6 @@ import caliCat from '@/images/logos/calicat.png'
 import caliCatSplash from '@/images/photos/calicatSplash.png'
 import butterDogs from '@/images/logos/butterdogs.png'
 import myceliaSplash from '@/images/photos/MyceliaSplash.png'
-/*
-const projects = [
-  {
-    name: "A Woman's Duty",
-    description:
-      "A Woman's Duty is a 1950's inspired satirical zombie beat 'em up based around subverting stereotypes in a comedic manner.",
-    link: { href: 'https://ryan-kerry.itch.io/a-womans-duty', label: 'itch.io' },
-    logo: birdBrains,
-  },
-  {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
-  {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
-]
-
-function LinkIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
-}
-*/
 
 const posts = [
 
@@ -121,7 +71,7 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
+        <title>Projects - Mikolaj Greszta</title>
         <meta
           name="description"
           content="The things I've made with love and care."
@@ -129,8 +79,8 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="The things I've made with love and care."
-        intro="I've worked on a few game projects during my studies at uni, and they've all been made in the span of one year. 
-        I hope to fill this page with more and more awesome games as time goes on."
+        intro="I've worked on a few game projects during my studies at university, and they've all been made in the span of one year. 
+        I hope to fill this page with more and more awesome games as time goes on. Each project below presented its own set of unique problems to overcome, and with that came the character of each game."
       >
       <div className="bg-light-gray">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

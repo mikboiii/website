@@ -37,6 +37,8 @@ function MailIcon(props) {
   )
 }
 
+//mention game master in dnd
+
 export default function About() {
   return (
     <>
@@ -72,6 +74,8 @@ export default function About() {
               <p>
                 I started by making fledgling games on Scratch after finishing all my tasks in a computing lessons.
                 Simple platformers found on tutorials or janky two-player battle arenas were my favourites.
+                One activity that really thrust forward my creative ability and love for game development was being a Dungeons & Dragons DM for seven years.
+                Having to meticulously carve out worlds, memorise mechanics and then put it all together in a live session was a joy like no other.
                 Now I&apos;ve taken on larger development projects in groups during my time at Falmouth University and produced some awesome projects.
               </p>
               <p>
