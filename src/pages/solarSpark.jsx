@@ -8,6 +8,7 @@ import animationController from '@/images/SolarSpark/CombatAnimationController.p
 import animationLayerOne from '@/images/SolarSpark/PrimaryLayer.png'
 import HealGif from '@/images/SolarSpark/Heal.gif'
 import SpecialGif from '@/images/SolarSpark/Special.gif'
+import MusicExample from '@/images/SolarSpark/MusicTracks.png'
 
 // ' is &apos;
 export default function solarSpark()
@@ -71,9 +72,10 @@ export default function solarSpark()
     </div>
         
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">My individual contributions to the project</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">My individual contributions to the project:</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Player Combat and Animation:</h2>
               <p>
-                <b>Player Combat and Animation:</b> I was one of the main advocates for the combat system we have in the game.
+                I was one of the main advocates for the combat system we have in the game.
                 I was part of the designing process and was solely responsible for producing the mechanic.
                 It was important for our genre of game that the combat was fluid and flexible.
                 Given that our combat was very animation-heavy, I elected to use Unity&apos;s animation controller to work as a finite state machine for player combat
@@ -86,14 +88,14 @@ export default function solarSpark()
               </p>
               <p>
                 We also had a basic special attack and heal within the game, both of which used the &quot;heat gauge&quot;.
-                Heat would build up with every hit the player scored on an enemy, much like soul from <i><b>Hollow Knight</b></i>.
+                Heat would build up with every hit the player scored on an enemy, much like soul from <i><b>Hollow Knight</b></i> (Team Cherry, 2017).
                 The design motivation behind this was to keep the player engaged in every encounter. The lack of regenerative health would stop the player from being able to endlessly 
                 kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
                 reward skillful play.
               </p>
               <div className="flex flex-row flex-wrap object-center">
-              <Image src={HealGif} class="object-scale-down scale-75"/>
-              <Image src={SpecialGif} class="object-scale-down scale-75"/>
+              <Image src={HealGif} class="object-scale-down scale-90"/>
+              <Image src={SpecialGif} class="object-scale-down scale-90"/>
               </div>
               <p>
                 Our animation choices were constrained as our player model was delivered very late in development, so I used Adobe Mixamo animations for the player, adjusting them to suit our needs.
@@ -109,17 +111,52 @@ export default function solarSpark()
                 The lack of custom animations led to a feeling of stagnation within our attacks. We mitigated it as much as we could, but it wasn&apos;t quite <i>perfect</i>.
               </p>
               <Image class="object-center mx-auto" src={animationLayerOne}/>
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Audio Systems:</h2>
               <p>
-                The audio systems
+                Producing the audio system was enjoyable. I created a selection of functions to play sounds in different ways.
+                I made liberal use of a trick I learned in my first year of uni: using one sound and slightly adjusting its pitch every time it was played added easy variety and prevented it from getting old.
+                I only had a small number of recurring sounds but by implementing that simple functionality made it sound like there were more.
               </p>
+              <p>
+                The way most sounds were played was through a single script on each object. This script stored all the sounds and audio sources an object would use.
+                This made it easy to have one script work for multiple different objects, and could handle being played in code and through animation events.
+                Some objects needed more bespoke audio work, but that was handled through inheritance so only minor changes would need to be made.
+                The system was flexible and spending the effort to make it reusable made it significantly faster and easier to implement audio across all required objects.
+              </p>
+              <p>
+                Some sounds I had made myself by recording and adapting sound clips, turning them into something wildly different. Most sounds, however, were taken from <b><i>Soundly</i></b>.
+                The sounds were all adjusted to fit our specific needs, and our game audio sounded diverse and complete.
+                The voice lines were recorded in a studio on campus with Toby Cooper and Ellie Potter as voice actors, Ernest directing the delivery, and me managing all the audio tech.
+                Collaborating with the acting students from the same university was incredibly fun. We had to send out a casting call and audition every candidate together.
+                Scheduling the recording sessions alongside our routine studio working sessions was a time management challenge but we made it work.
+              </p>
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Loading and Intro screens:</h2>
               <p>
                 The loading + intro screens
               </p>
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Music System:</h2>
               <p>
-                The music
+                Producing the music for the game was the most creatively enriching part of development for me.
+                We wanted to reflect the themes and artistic influences within the music. I tried to reflect the character of the game in the instrumentation, rhythm and tonality of the music.
+                It was difficult to settle on a particular key for any given track, some used standard scales, but some used dominant Phrygian scales to really convey the harmony of Egyptian-style music.
               </p>
               <p>
-                The Trailer
+                When making the tracks for the game, I wanted the character of the music to reflect the in-game situation. I designed the music so that each track had two versions: calm and aggressive.
+                To avoid abrupt cuts and changes in track, I wanted to seamlessly crossfade between the two moods of the same track.
+                While this led to a greater creative challenge when composing the music, it enabled an immersive and compelling experience in-game.                
+              </p>
+              <Image class="object-center mx-auto"src={MusicExample}/>
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Trailer:</h2>
+              <p>
+                Making the trailer was a tense process as it was left late to focus on polishing the boss battle against Sobek.
+                I put myself forward to make it because it would have been unfair to let my managerial decisions befall someone else with the consequences.
+                It was a fun adventure, though, as stitching together gameplay footage with a the voiceover and music over it made the game suddenly more attractive.
+                I made sure to showcase everything the player could do, along with a bit of each of the game&apos;s pillars to provide a well-rounded image of the game.
+              </p>
+              <p>
+                I worked closely with our writer, Ernest, to record lines for the trailer well in advance. We actually had three different versions of the trailer lines: one voiced by Eset, 
+                one by Sobek and one by the villainous Set. It actually gave us a good deal of choice where we could have mixed and matched the lines. We settled on only using Eset&apos;s lines 
+                because she was the main character, and her voice acting was central to the game and the narrative.
               </p>
             </div>
    </SimpleLayout>
