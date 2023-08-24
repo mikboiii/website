@@ -22,7 +22,7 @@ const posts = [
   {
     id: 1,
     title: 'Solar Spark',
-    href: 'https://calicatgamesstudio.itch.io/solar-spark',
+    href: '/solarSpark',
     description:
       'Embark on an extraordinary journey where SolarPunk meets Ancient Egyptian Mythology.',
     imageUrl:
