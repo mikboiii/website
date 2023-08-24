@@ -6,6 +6,8 @@ import Image from 'next/image'
 
 import animationController from '@/images/SolarSpark/CombatAnimationController.png'
 import animationLayerOne from '@/images/SolarSpark/PrimaryLayer.png'
+import HealGif from '@/images/SolarSpark/Heal.gif'
+import SpecialGif from '@/images/SolarSpark/Special.gif'
 
 // ' is &apos;
 export default function solarSpark()
@@ -81,13 +83,16 @@ export default function solarSpark()
                 I was happy with this system as it suited the game very well, letting the player mix and match their own combos.
               </p>
               <p>
-                We also had a basic special attack and heal within the game, both of which used the "heat gauge".
+                We also had a basic special attack and heal within the game, both of which used the &quot;heat gauge&quot;.
                 Heat would build up with every hit the player scored on an enemy, much like soul from <i><b>Hollow Knight</b></i>.
                 The design motivation behind this was to keep the player engaged in every encounter. The lack of regenerative health would stop the player from being able to endlessly 
                 kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
                 reward skillful play.
               </p>
-
+              <div className="flex flex-row flex-wrap">
+              <Image src={HealGif} class="object-scale-down"/>
+              <Image src={SpecialGif} class="object-scale-down"/>
+              </div>
               <p>
                 Our animation choices were constrained as our player model was delivered very late in development, so I used Adobe Mixamo animations for the player, adjusting them to suit our needs.
                 Animation events controlled much of the mechanic; enabling or disabling variables (hitbox, movement, etc.), controlling timings and playing sounds.
@@ -98,7 +103,7 @@ export default function solarSpark()
                 I actually ended up handling all animations for the player. I was happy to work with the other programmers and their scripts and implement animations with my system to maintain consistency and avoid spaghetti-ing the code.
                 The image below is the primary layer for the player, covering movement and combat actions. 
                 The other layers covered damage animations and dash animations, so that the motions didn&apos;t interrupt the player&apos;s momentum.
-                Mixamo wasn&apos;t made with this sort of system in mind. The animations from it were more rigid and seemingly intended to be used "out-of-the-box".
+                Mixamo wasn&apos;t made with this sort of system in mind. The animations from it were more rigid and seemingly intended to be used &quot;out-of-the-box&quot;.
                 The lack of custom animations led to a feeling of stagnation within our attacks. We mitigated it as much as we could, but it wasn&apos;t quite <i>perfect</i>.
               </p>
               <Image src={animationLayerOne}/>
