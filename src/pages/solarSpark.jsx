@@ -26,10 +26,12 @@ export default function solarSpark()
     intro="This was the big one, this was the project to really show off what we could do. 
     The third year team project was definitely the toughest, but it was also the most enriching.
     Read below to understand the journey of the project.">
-    <iframe height="167" frameborder="0" src="https://itch.io/embed/1939160" width="600"></iframe>
-    <iframe width="600" height="337.50" src="https://www.youtube.com/embed/qgrneknSSBU" title="Solar Spark Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
     
+    <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+      <iframe height="167" frameborder="0" src="https://itch.io/embed/1939160" width="600"></iframe>
+      <div className="">
+        <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/qgrneknSSBU" title="Solar Spark Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Overview</h2>
         <p>
             Solar Spark is an action-adventure hack and slash set in a solarpunk world inspired by ancient Egyptian mythology. 
