@@ -28,7 +28,7 @@ export default function solarSpark()
     Read below to understand the journey of the project.">
     
     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-      <iframe height="167" frameborder="0" src="https://itch.io/embed/1939160" width="600"></iframe>
+      <iframe class="w-full aspect-auto"  frameborder="0" src="https://itch.io/embed/1939160"></iframe>
       <div className="">
         <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/qgrneknSSBU" title="Solar Spark Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
@@ -78,7 +78,7 @@ export default function solarSpark()
                 It was important for our genre of game that the combat was fluid and flexible.
                 Given that our combat was very animation-heavy, I elected to use Unity&apos;s animation controller to work as a finite state machine for player combat
               </p>
-              <Image src={animationController}/>
+              <Image class="object-center mx-auto" src={animationController}/>
               <p>
                 The premise that the combos are linear and have a pattern, but every attack would lead into another perfectly.
                 You could seamlessly switch from a light attack to a heavy attack.
@@ -91,9 +91,9 @@ export default function solarSpark()
                 kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
                 reward skillful play.
               </p>
-              <div className="flex flex-row flex-wrap">
-              <Image src={HealGif} class="object-scale-down"/>
-              <Image src={SpecialGif} class="object-scale-down"/>
+              <div className="flex flex-row flex-wrap object-center">
+              <Image src={HealGif} class="object-scale-down scale-75"/>
+              <Image src={SpecialGif} class="object-scale-down scale-75"/>
               </div>
               <p>
                 Our animation choices were constrained as our player model was delivered very late in development, so I used Adobe Mixamo animations for the player, adjusting them to suit our needs.
@@ -108,7 +108,7 @@ export default function solarSpark()
                 Mixamo wasn&apos;t made with this sort of system in mind. The animations from it were more rigid and seemingly intended to be used &quot;out-of-the-box&quot;.
                 The lack of custom animations led to a feeling of stagnation within our attacks. We mitigated it as much as we could, but it wasn&apos;t quite <i>perfect</i>.
               </p>
-              <Image src={animationLayerOne}/>
+              <Image class="object-center mx-auto" src={animationLayerOne}/>
               <p>
                 The audio systems
               </p>
