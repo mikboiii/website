@@ -21,8 +21,10 @@ export default function solarSpark()
     intro="This was the big one, this was the project to really show off what we could do. 
     The third year team project was definitely the toughest, but it was also the most enriching.
     Read below to understand the journey of the project."
+    
     >
     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+    
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Overview</h2>
         <p>
             Solar Spark is an action-adventure hack and slash set in a solarpunk world inspired by ancient Egyptian mythology. 
@@ -33,7 +35,7 @@ export default function solarSpark()
             This project was the largest I had worked on during my time at Falmouth University. 
             The range of tasks I performed was diverse, and I learned a lot during the production of Solar Spark.
             I had a hand in many aspects of the game as producer, but I only made judgements I was qualified to make, 
-            and I trusted each team member's individual capabilities to fulfil their tasks.
+            and I trusted each team member&apos;s individual capabilities to fulfil their tasks.
         </p>
         <ul class="list-disc list-inside">
             <p><b>Summary of roles:</b></p>
@@ -59,7 +61,6 @@ export default function solarSpark()
         <p>
             The game we were left with was one we could be proud of. 
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qgrneknSSBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
         <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Pre-production</h2>
@@ -81,7 +82,7 @@ export default function solarSpark()
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">My individual contributions to the project</h2>
               <p>
-                <b>Player Combat</b>{'\n'} 
+                <b>Player Combat</b>
                 I was responsible for the player combat 
               </p>
               <p>
