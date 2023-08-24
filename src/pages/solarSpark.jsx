@@ -4,6 +4,9 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Head from 'next/head'
 import Image from 'next/image'
 
+import animationController from '@/images/SolarSpark/CombatAnimationController.png'
+import animationLayerOne from '@/images/SolarSpark/PrimaryLayer.png'
+
 // ' is &apos;
 export default function solarSpark()
 {
@@ -20,9 +23,9 @@ export default function solarSpark()
     title="My third year final team project"
     intro="This was the big one, this was the project to really show off what we could do. 
     The third year team project was definitely the toughest, but it was also the most enriching.
-    Read below to understand the journey of the project."
-    
-    >
+    Read below to understand the journey of the project.">
+    <iframe height="167" frameborder="0" src="https://itch.io/embed/1939160" width="600"></iframe>
+    <iframe width="600" height="337.50" src="https://www.youtube.com/embed/qgrneknSSBU" title="Solar Spark Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
     
         <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Overview</h2>
@@ -62,7 +65,63 @@ export default function solarSpark()
             The game we were left with was one we could be proud of. 
         </p>
     </div>
-        <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+        
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">My individual contributions to the project</h2>
+              <p>
+                <b>Player Combat and Animation:</b> I was one of the main advocates for the combat system we have in the game.
+                I was part of the designing process and was solely responsible for producing the mechanic.
+                It was important for our genre of game that the combat was fluid and flexible.
+                Given that our combat was very animation-heavy, I elected to use Unity&apos;s animation controller to work as a finite state machine for player combat
+              </p>
+              <Image src={animationController}/>
+              <p>
+                The premise that the combos are linear and have a pattern, but every attack would lead into another perfectly.
+                You could seamlessly switch from a light attack to a heavy attack.
+                I was happy with this system as it suited the game very well, letting the player mix and match their own combos.
+              </p>
+              <p>
+                We also had a basic special attack and heal within the game, both of which used the "heat gauge".
+                Heat would build up with every hit the player scored on an enemy, much like soul from <i><b>Hollow Knight</b></i>.
+                The design motivation behind this was to keep the player engaged in every encounter. The lack of regenerative health would stop the player from being able to endlessly 
+                kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
+                reward skillful play.
+              </p>
+
+              <p>
+                Our animation choices were constrained as our player model was delivered very late in development, so I used Adobe Mixamo animations for the player, adjusting them to suit our needs.
+                Animation events controlled much of the mechanic; enabling or disabling variables (hitbox, movement, etc.), controlling timings and playing sounds.
+                I found that animation events made it easy to tailor the macro aspects of each attack. It allowed our designers to tweak elements of 
+                the combat and avoid using scripts and having to adjust specific timings relative to the animation.
+              </p>
+              <p>
+                I actually ended up handling all animations for the player. I was happy to work with the other programmers and their scripts and implement animations with my system to maintain consistency and avoid spaghetti-ing the code.
+                The image below is the primary layer for the player, covering movement and combat actions. 
+                The other layers covered damage animations and dash animations, so that the motions didn&apos;t interrupt the player&apos;s momentum.
+                Mixamo wasn&apos;t made with this sort of system in mind. The animations from it were more rigid and seemingly intended to be used "out-of-the-box".
+                The lack of custom animations led to a feeling of stagnation within our attacks. We mitigated it as much as we could, but it wasn&apos;t quite <i>perfect</i>.
+              </p>
+              <Image src={animationLayerOne}/>
+              <p>
+                The audio systems
+              </p>
+              <p>
+                The loading + intro screens
+              </p>
+              <p>
+                The music
+              </p>
+              <p>
+                The Trailer
+              </p>
+            </div>
+   </SimpleLayout>
+</>
+      )
+}
+
+/*
+<div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Pre-production</h2>
               <p>
                 The priority when assembling the team was ensuring that the range of skills was balanced and could fill out the needs of any given project we would settle on.
@@ -79,23 +138,4 @@ export default function solarSpark()
 
               </p>
             </div>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">My individual contributions to the project</h2>
-              <p>
-                <b>Player Combat</b>
-                I was responsible for the player combat 
-              </p>
-              <p>
-                The audio systems
-              </p>
-              <p>
-                The loading + intro screens
-              </p>
-              <p>
-                The music
-              </p>
-            </div>
-   </SimpleLayout>
-</>
-      )
-}
+            */
