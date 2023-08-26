@@ -93,9 +93,9 @@ export default function solarSpark()
                 kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
                 reward skillful play.
               </p>
-              <div className="flex flex-row flex-wrap object-center">
-              <Image src={HealGif} class="object-scale-down scale-90"/>
-              <Image src={SpecialGif} class="object-scale-down scale-90"/>
+              <div className="flex flex-row overflow auto object-center">
+              <Image src={HealGif} class="shrink w-full aspect-square m-4"/>
+              <Image src={SpecialGif} class="shrink w-full aspect-square m-4"/>
               </div>
               <p>
                 Our animation choices were constrained as our player model was delivered very late in development, so I used Adobe Mixamo animations for the player, adjusting them to suit our needs.
