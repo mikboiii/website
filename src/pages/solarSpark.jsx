@@ -132,7 +132,7 @@ export default function solarSpark()
               </p>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Loading and Intro screens:</h2>
               <p>
-                The loading + intro screens
+                The loading screens and intro screens taught some new skills about instances and how to prevent leaks of objects duplicating themselves across scenes.
               </p>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Music System:</h2>
               <p>
@@ -143,7 +143,27 @@ export default function solarSpark()
               <p>
                 When making the tracks for the game, I wanted the character of the music to reflect the in-game situation. I designed the music so that each track had two versions: calm and aggressive.
                 To avoid abrupt cuts and changes in track, I wanted to seamlessly crossfade between the two moods of the same track.
-                While this led to a greater creative challenge when composing the music, it enabled an immersive and compelling experience in-game.                
+                While this led to a greater creative challenge when composing the music, it enabled an immersive and compelling experience in-game.
+              </p>
+              <p>
+                Sobek is the only track which didn&apos;t need the smooth change in track, and instead I wanted a powerful piece of music which reflected him.
+                I wanted something along the lines of Toby Fox&apos;s <i>Battle Against a True Hero</i>, as that reflected a deadly turmoil and I broadly followed that structure.
+                The track needed to be crunchy and electrifying, and it enhanced the boss battle experience when it was added, and became something of a highlight, like a pretty bow to top it off.
+              </p>
+              <div className="flex flex-row object-center overflow-auto">
+              <iframe class="shrink m-4 w-full aspect-video" src="https://www.youtube.com/embed/tDiUBuhjCbE?si=WcUP8cvLlw7F7upN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="shrink m-4 w-full aspect-video" src="https://www.youtube.com/embed/m0tihyLOYUM?si=UmS6_2GB9muPSnww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div className="flex flex-row object-center overflow-auto">
+              <iframe class="shrink m-4 w-full aspect-video" src="https://www.youtube.com/embed/q0YPzDnxElg?si=65nJ2FDZSzkB1JSt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="shrink m-4 w-full aspect-video" src="https://www.youtube.com/embed/y_p7jPSw39M?si=cJOSz33CCmlshMPO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <p>
+                I put myself forward for the responsibility of music early on because I wanted to develop my composition skills. 
+                I tried for a long time over the year to produce the music but I had the <i>worst</i> creative block I've ever had.
+                I&apos;d work for several hours making a track to a point where I felt somewhat happy with it, but the next day I&apos;d listen back and delete it.
+                When the deadline was a few months away and time was getting tight, I suddenly had creative clarity. 
+                The tutorial and city tracks were my first lot, so they didn't have the same level of polish as the temple and Sobek tracks.
               </p>
               <Image class="object-center mx-auto"src={MusicExample}/>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Trailer:</h2>
