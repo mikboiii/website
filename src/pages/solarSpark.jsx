@@ -160,10 +160,10 @@ export default function solarSpark()
               </div>
               <p>
                 I put myself forward for the responsibility of music early on because I wanted to develop my composition skills. 
-                I tried for a long time over the year to produce the music but I had the <i>worst</i> creative block I've ever had.
+                I tried for a long time over the year to produce the music but I had the <i>worst</i> creative block I&apos;ve ever had.
                 I&apos;d work for several hours making a track to a point where I felt somewhat happy with it, but the next day I&apos;d listen back and delete it.
                 When the deadline was a few months away and time was getting tight, I suddenly had creative clarity. 
-                The tutorial and city tracks were my first lot, so they didn't have the same level of polish as the temple and Sobek tracks.
+                The tutorial and city tracks were my first lot, so they didn&apos;t have the same level of polish as the temple and Sobek tracks.
               </p>
               <Image class="object-center mx-auto"src={MusicExample}/>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Trailer:</h2>
