@@ -93,7 +93,7 @@ export default function solarSpark()
                 kite enemies around to heal. Building up this resource would allow players to recover health, or get a strong AoE attack to 
                 reward skillful play.
               </p>
-              <div className="flex flex-row overflow auto object-center">
+              <div className="flex flex-row overflow-auto object-center">
               <Image src={HealGif} class="shrink w-full aspect-square m-4"/>
               <Image src={SpecialGif} class="shrink w-full aspect-square m-4"/>
               </div>
