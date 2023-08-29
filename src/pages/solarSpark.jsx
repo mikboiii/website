@@ -133,6 +133,10 @@ export default function solarSpark()
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Loading and Intro screens:</h2>
               <p>
                 The loading screens and intro screens taught some new skills about instances and how to prevent leaks of objects duplicating themselves across scenes.
+                The decision to introduce loading screens was pitched by me, because we had a variety of environments but no smooth way of transitioning them.
+                We originally wanted transition levels, but these were out of scope and we still would not have had a smooth way of moving on to another level.
+                The lore information in the loading screens was also my way of conveying details about the world. 
+                We originally wanted a collectible system to encourage exploration, but we decided that it would be out of scope to create a decent system.
               </p>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Music System:</h2>
               <p>
