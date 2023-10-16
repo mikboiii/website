@@ -33,7 +33,29 @@ export default function solarSpark()
       <div className="">
         <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/qgrneknSSBU" title="Solar Spark Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-        <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Overview</h2>
+      <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">The Quick Version</h2>
+      <ul class="list-disc list-inside">
+        <p><b>My roles:</b></p>
+        <li><b>Producer</b> - handled scheduling and discussion during meetings, managed task board.</li>
+        <li><b>Programmer</b> - designed and produced combat, interface and narrative screen systems, bugfixing.</li>
+        <li><b>Audio Director</b> - scheduled and recorded all voice lines with actors, designed sound effects, composed music.</li>
+      </ul>
+      <ul class="list-disc list-inside">
+      <p><b>My Contributions:</b></p>
+      <li><b>Player Combat and Animations:</b> I handled the programming and engine work to produce the combat system and integrate all player animations.
+      This was done using C# scripts and Unity's animation controller system.</li>
+      <li><b>Audio Systems:</b> I procured all sound effects for use in-game, using custom C# scripts and Unity's audio system to create immersive soundscapes.
+      The voice actors were scheduled and recorded by me, and the voice lines were mixed and integrated by me.</li>
+      <li><b>Loading and Intro Screens:</b> The loading screen functionality was integrated by me using preliminary work done by Harry, another programmer on our team.
+      The intro screens were sequenced and animated by me.</li>
+      <li><b>UI:</b> The final design used in game was a put forward by me and refiend by our artists. I facilitated the functionality and integration of assets.</li>
+      <li><b>Music System:</b> The music system was designed after dynamic music systems in games. I wrote some scripts to handle the changing of music tracks at run-time.
+      I composed and integrated all music found in-game.</li>
+      <li><b>Trailer:</b> I put together the trailer using recorded in-game clips and following a story board created by our writer.</li>
+      </ul>
+
+      <h2 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">The Long Version</h2>
+      <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Overview</h2>
         <p>
             Solar Spark is an action-adventure hack and slash set in a solarpunk world inspired by ancient Egyptian mythology. 
             Playing as the powerful exiled queen Eset, you undertake a journey to rescue your beloved Osiris from the dark clutches of Set.
@@ -82,7 +104,7 @@ export default function solarSpark()
               </p>
               <Image class="object-center mx-auto" src={animationController}/>
               <p>
-                The premise that the combos are linear and have a pattern, but every attack would lead into another perfectly.
+                The premise is that the combos are linear and have a pattern, but every attack would lead into another perfectly.
                 You could seamlessly switch from a light attack to a heavy attack.
                 I was happy with this system as it suited the game very well, letting the player mix and match their own combos.
               </p>
@@ -135,8 +157,14 @@ export default function solarSpark()
                 The loading screens and intro screens taught some new skills about instances and how to prevent leaks of objects duplicating themselves across scenes.
                 The decision to introduce loading screens was pitched by me, because we had a variety of environments but no smooth way of transitioning them.
                 We originally wanted transition levels, but these were out of scope and we still would not have had a smooth way of moving on to another level.
-                The lore information in the loading screens was also my way of conveying details about the world. 
-                We originally wanted a collectible system to encourage exploration, but we decided that it would be out of scope to create a decent system.
+                The lore information in the loading screens was also my way of conveying details about the world, much like <i>Metro 2033</i> (2010).
+                We originally wanted a collectible system to encourage exploration, but we decided that it would be out of scope to create a worthwhile system.
+              </p>
+              <p>
+                I asked our artists to work with our writer to determine the key lore points to convey.
+                Most elements of production took up a lot of my attention, so I encouraged them
+                to take liberties and make the creative decisions themselves for this aspect.
+                I was very impressed by the art they had produced and it made the 
               </p>
               <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">Music System:</h2>
               <p>
@@ -174,7 +202,7 @@ export default function solarSpark()
               <p>
                 Making the trailer was a tense process as it was left late to focus on polishing the boss battle against Sobek.
                 I put myself forward to make it because it would have been unfair to let my managerial decisions befall someone else with the consequences.
-                It was a fun adventure, though, as stitching together gameplay footage with a the voiceover and music over it made the game suddenly more attractive.
+                It was a fun adventure, though, as stitching together gameplay footage with the voiceover and music over it made the game suddenly more attractive.
                 I made sure to showcase everything the player could do, along with a bit of each of the game&apos;s pillars to provide a well-rounded image of the game.
               </p>
               <p>
