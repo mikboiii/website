@@ -43,8 +43,8 @@ export default function solarSpark()
       <ul class="list-disc list-inside">
       <p><b>My Contributions:</b></p>
       <li><b>Player Combat and Animations:</b> I handled the programming and engine work to produce the combat system and integrate all player animations.
-      This was done using C# scripts and Unity's animation controller system.</li>
-      <li><b>Audio Systems:</b> I procured all sound effects for use in-game, using custom C# scripts and Unity's audio system to create immersive soundscapes.
+      This was done using C# scripts and Unity&apos;s animation controller system.</li>
+      <li><b>Audio Systems:</b> I procured all sound effects for use in-game, using custom C# scripts and Unity&apos;s audio system to create immersive soundscapes.
       The voice actors were scheduled and recorded by me, and the voice lines were mixed and integrated by me.</li>
       <li><b>Loading and Intro Screens:</b> The loading screen functionality was integrated by me using preliminary work done by Harry, another programmer on our team.
       The intro screens were sequenced and animated by me.</li>
