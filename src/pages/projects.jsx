@@ -83,7 +83,7 @@ export default function Projects() {
         I hope to fill this page with more and more awesome games as time goes on. Each project below presented its own set of unique problems to overcome, and with that came the character of each game."
       >
       <div className="bg-light-gray">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Projects</h2>
           <p className="mt-2 text-lg leading-8 text-black dark:text-white">
@@ -122,6 +122,13 @@ export default function Projects() {
               </h3>
             </article>
           ))}
+        </div>
+        <div> </div>
+        <div className="mx-auto max-w-2xl text-center py-8">
+          <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Personal Projects</h2>
+          <p className="mt-2 text-lg leading-8 text-black dark:text-white">
+            These are the projects which only I have worked on
+          </p>
         </div>
       </div>
     </div>
