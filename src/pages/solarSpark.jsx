@@ -4,11 +4,11 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import animationController from '@/images/SolarSpark/CombatAnimationController.png'
-import animationLayerOne from '@/images/SolarSpark/PrimaryLayer.png'
-import HealGif from '@/images/SolarSpark/Heal.gif'
-import SpecialGif from '@/images/SolarSpark/Special.gif'
-import MusicExample from '@/images/SolarSpark/MusicTracks.png'
+import animationController from 'public/images/SolarSpark/CombatAnimationController.png'
+import animationLayerOne from 'public/images/SolarSpark/PrimaryLayer.png'
+import HealGif from 'public/images/SolarSpark/Heal.gif'
+import SpecialGif from 'public/images/SolarSpark/Special.gif'
+import MusicExample from 'public/images/SolarSpark/MusicTracks.png'
 
 // ' is &apos;
 export default function solarSpark()

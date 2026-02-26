@@ -3,19 +3,14 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 
-import birdBrains from '@/images/logos/birdbrains.png'
-import birdbrainsSplash from '@/images/photos/birdbrainsSplash.png'
-import caliCat from '@/images/logos/calicat.png'
-import caliCatSplash from '@/images/photos/calicatSplash.png'
-import butterDogs from '@/images/logos/butterdogs.png'
-import myceliaSplash from '@/images/photos/MyceliaSplash.png'
-import nightfallSplash from '@/images/photos/nightfallSplash.png'
+import birdBrains from 'public/images/logos/birdbrains.png'
+import birdbrainsSplash from 'public/images/photos/birdbrainsSplash.png'
+import caliCat from 'public/images/logos/calicat.png'
+import caliCatSplash from 'public/images/photos/calicatSplash.png'
+import butterDogs from 'public/images/logos/butterdogs.png'
+import myceliaSplash from 'public/images/photos/MyceliaSplash.png'
+import nightfallSplash from 'public/images/photos/nightfallSplash.png'
 
 const posts = [
 
