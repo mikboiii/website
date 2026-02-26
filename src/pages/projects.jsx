@@ -83,10 +83,8 @@ const personalPosts = [
       name: 'Voxflare',
       imageUrl:
       nightfallSplash,
-    },
+    }
   }
-
-
 ]
 
 export default function Projects() {
@@ -109,7 +107,7 @@ export default function Projects() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Projects</h2>
           <p className="mt-2 text-lg leading-8 text-black dark:text-white">
-            These are the projects I have worked on and have contributed towards
+            These are the projects I&apos;ve worked on and have contributed towards
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -149,7 +147,7 @@ export default function Projects() {
         <div className="mx-auto max-w-2xl text-center py-8">
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Independent Projects</h2>
           <p className="mt-2 text-lg leading-8 text-black dark:text-white">
-            These are the projects which I've worked on outside of education or employment
+            These are the projects which I&apos;ve worked on outside of education or employment
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
