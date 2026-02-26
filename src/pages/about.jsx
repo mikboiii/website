@@ -117,7 +117,7 @@ export default function About() {
               <SocialLink
               href={""}
               icon={PhoneIcon}>
-                07702 763785</SocialLink>
+                +44 7702 763785</SocialLink>
             </ul>
           </div>
         </div>
