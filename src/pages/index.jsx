@@ -5,6 +5,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
+import { Divider } from '@/components/divider'
 import { Container } from '@/components/Container'
 import {
   GitHubIcon,
@@ -259,30 +260,40 @@ export default function Home({ articles }) {
         />
       </Head>
       <Container className="mt-9">
-        <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Games programmer and audio technician
-          </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Mikolaj, a games developer specialised in programming and audio. Welcome to the place where you see who I am and what I do.
-          </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://github.com/mikboiii"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
+        <div>
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              Games programmer and audio technician
+            </h1>
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              I&apos;m Mikolaj, a games developer specialised in programming and audio. Welcome to the place where you see who I am and what I do.
+            </p>
+            <div className="mt-6 flex gap-6">
+              <SocialLink
+                href="https://github.com/mikboiii"
+                aria-label="Follow on GitHub"
+                icon={GitHubIcon}
+              />
+              <SocialLink
+                href="https://linkedin.com"
+                aria-label="Follow on LinkedIn"
+                icon={LinkedInIcon}
+              />
+            </div>
           </div>
+            <div className="my-6">
+            <Divider1 />  
+            </div>
         </div>
       </Container>
       <Photos />
     </>
   )
+}
+
+function Divider1()
+{
+  return <Divider classname="my-6" />
 }
 
 export async function getStaticProps() {
