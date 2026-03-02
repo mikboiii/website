@@ -22,6 +22,7 @@ import solarSpark2 from 'public/images/photos/solarsparkscreen2.png'
 import solarSpark3 from 'public/images/photos/solarsparkscreen3.jpg'
 import womanDuty1 from 'public/images/photos/womansdutyscreen1.jpg'
 import mycelia1 from 'public/images/photos/myceliascreen1.png'
+import caliCatSplash from 'public/images/photos/calicatSplash.png'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -103,7 +104,7 @@ function Article({ article }) {
 function SocialLink({ icon: Icon, ...props }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className="h-6 w-6 fill-teal-500 transition group-hover:fill-teal-600 dark:fill-teal-400 dark:group-hover:fill-teal-300" />
     </Link>
   )
 }
@@ -232,7 +233,7 @@ function Photos() {
             key={image.src}
             href = {links[imageIndex]}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-auto rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',)}
+              'relative aspect-[9/10] w-44 flex-none overflow-auto rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl border-solid border-4 border-transparent transition ease-in-out hover:border-teal-500',)}
           >
               <Image
                 src={image}
@@ -284,6 +285,12 @@ export default function Home({ articles }) {
             <div className="my-6">
             <Divider1 />  
             </div>
+            <div>
+              <ProjectHighlight />
+            </div>
+            <div className="my-6">
+            <Divider1 />  
+            </div>
         </div>
       </Container>
       <Photos />
@@ -300,7 +307,6 @@ export async function getStaticProps() {
   if (process.env.NODE_ENV === 'production') {
     await generateRssFeed()
   }
-
   return {
     props: {
       articles: (await getAllArticles())
@@ -308,4 +314,67 @@ export async function getStaticProps() {
         .map(({ component, ...meta }) => meta),
     },
   }
+}
+
+import { CloudArrowUpIcon, CodeBracketIcon, LockClosedIcon, MicrophoneIcon, ServerIcon, UsersIcon } from '@heroicons/react/20/solid'
+
+const features = [
+  {
+    name: 'Producer:',
+    description:
+      'I coordinated and delegated tasks to satisfy project pipeline. Organised meetings and task boards. Found support for blockers amongst the team.',
+    icon: UsersIcon,
+  },
+  {
+    name: 'Programmer:',
+    description: 'Produced player gameplay mechanics and animation programming, programmed UI and integrated UI art assets, level loading systems and transitions, LOTS of bugfixing.',
+    icon: CodeBracketIcon,
+  },
+  {
+    name: 'Audio Director:',
+    description: 'Programmed a dynamic audio and music system, scheduled and recorded voice acting, designed sound effects and composed the music.',
+    icon: MicrophoneIcon,
+  },
+]
+
+function ProjectHighlight() {
+  return (
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="lg:pt-4 lg:pr-8">
+            <div className="lg:max-w-lg">
+              <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
+                Project Highlight: Solar Spark
+              </p>
+              <p className="mt-6 text-lg/8 text-gray-700 dark:text-gray-300">
+                This was my final year group project at university, and it best summarises my strengths.
+              </p>
+              <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none dark:text-gray-400">
+                {features.map((feature) => (
+                  <div key={feature.name} className="relative pl-9">
+                    <dt className="inline font-semibold text-gray-900 dark:text-white">
+                      <feature.icon
+                        aria-hidden="true"
+                        className="absolute top-1 left-1 size-5 text-teal-500 dark:text-teal-400"
+                      />
+                      {feature.name}
+                    </dt>{' '}
+                    <dd className="inline">{feature.description}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+          <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 border-solid border-4 border-transparent transition ease-in-out hover:border-teal-500">
+            <a href = "/solarSpark"> <span className="absolute inset-0" /> </a>
+          <Image
+            src={caliCatSplash}
+            alt=""
+            href="/solarSpark"
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          />
+          </div>
+        </div>
+      </div>
+  )
 }
