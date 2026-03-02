@@ -17,9 +17,9 @@ function SocialLink({ className, href, children, icon: Icon }) {
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-zinc-400 dark:text-zinc-200 dark:hover:text-zinc-500"
       >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <Icon className="h-6 w-6 flex-none fill-teal-500 transition group-hover:fill-teal-600 dark:fill-teal-400 dark:group-hover:fill-teal-300" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -40,7 +40,7 @@ function MailIcon(props) {
 function PhoneIcon(props)
 {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" {...props}>
+    <svg width="16" height="16" viewBox="-5 -5 24 24" aria-hidden="true" {...props}>
       <path
         fillRule="evenodd"
         d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
