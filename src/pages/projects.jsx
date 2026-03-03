@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { Divider } from '@/components/divider'
 
 import birdBrains from 'public/images/logos/birdbrains.png'
 import birdbrainsSplash from 'public/images/photos/birdbrainsSplash.png'
@@ -118,6 +119,7 @@ export default function Projects() {
         intro="I've worked on a few game projects during my studies at university, and they've all been made in the span of one year. 
         I hope to fill this page with more and more awesome games as time goes on. Each project below presented its own set of unique problems to overcome, and with that came the character of each game."
       >
+      <Divider className="my-6" />
       <div className="bg-light-gray">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-4">
         <div className="mx-auto max-w-2xl text-center">
@@ -159,7 +161,7 @@ export default function Projects() {
             </article>
           ))}
         </div>
-        <div> </div>
+        <div><Divider className="my-6" /></div>
         <div className="mx-auto max-w-2xl text-center py-8">
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Independent Projects</h2>
           <p className="mt-2 text-lg leading-8 text-black dark:text-white">
@@ -201,6 +203,7 @@ export default function Projects() {
         </div>
       </div>
     </div>
+    <div><Divider className="my-6" /></div>
     <div className="mx-auto max-w-2xl text-center py-8">
           <h2 className="text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">Other Projects</h2>
           <p className="mt-2 text-lg leading-8 text-black dark:text-white">

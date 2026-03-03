@@ -283,13 +283,13 @@ export default function Home({ articles }) {
             </div>
           </div>
             <div className="my-6">
-            <Divider1 />  
+            <Divider classname="my-6" />  
             </div>
             <div>
               <ProjectHighlight />
             </div>
             <div className="my-6">
-            <Divider1 />  
+            <Divider classname="my-6" />
             </div>
         </div>
       </Container>
@@ -298,10 +298,6 @@ export default function Home({ articles }) {
   )
 }
 
-function Divider1()
-{
-  return <Divider classname="my-6" />
-}
 
 export async function getStaticProps() {
   if (process.env.NODE_ENV === 'production') {
