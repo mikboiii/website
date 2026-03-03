@@ -14,10 +14,10 @@ import myceliaSplash from 'public/images/photos/MyceliaSplash.png'
 import nightfallSplash from 'public/images/photos/nightfallSplash.png'
 import dissertationSplash from 'public/images/photos/DissertationSplash.png'
 import portraitIcon from 'public/images/portrait.jpg'
+import luckyLight from 'public/images/photos/luckyLight.png'
+import cardslingerSplash from 'public/images/photos/cardslingerSplash.png'
 
 const posts = [
-
-
   {
     id: 1,
     title: 'Solar Spark',
@@ -81,6 +81,22 @@ const personalPosts = [
       name: 'Voxflare',
       imageUrl:
       nightfallSplash,
+    }
+  },
+  {
+    id: 2,
+    title: 'Cardslinger',
+    href: 'https://github.com/mikboiii/Cardslinger-Prototype',
+    description:
+      'A fast-paced platformer fps where everything is cards.',
+    imageUrl:
+    cardslingerSplash,
+    date: '2024-Current',
+    datetime: '2026-03-03',
+    author: {
+      name: 'Lucky Light Studios',
+      imageUrl:
+      luckyLight,
     }
   }
 ]
